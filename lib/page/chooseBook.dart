@@ -44,7 +44,7 @@ class _MyListViewState extends State<MyListView> {
           },
           child: ListTile(
             title: Text(
-              bookshelf[index],
+              bookshelf[index].split('/').last,
               style: TextStyle(
                 fontWeight: index==_selectedIndex ? FontWeight.bold : FontWeight.normal,
               ),
